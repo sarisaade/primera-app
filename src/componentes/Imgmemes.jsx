@@ -1,5 +1,8 @@
 import html2canvas from "html2canvas";
 import React, {useState} from "react";
+import logo from "../componentes/logo.jpg"
+
+
 
 
 const Imgmemes =( )=> {
@@ -30,7 +33,12 @@ const Imgmemes =( )=> {
 
     return(
         <div className="text-center">
-            <h1 className="mt-3 mb-3 text-center">Editor de memes</h1>
+            <header>
+            <nav className="navbar">
+                <img src={logo} alt="" />
+                <h2>Editor de memes</h2></nav>
+            </header>
+            
 
             <h3>Ingresa el texto del meme</h3>
             <input onChange ={textomeme} className="form-control w-50 m-50 m-auto d-block" type="text" placeholder="Pone tu frase" name="meme" aria-label="default input example"/>
